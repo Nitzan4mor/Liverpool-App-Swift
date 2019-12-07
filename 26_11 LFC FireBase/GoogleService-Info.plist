@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>596893222706-4jcb37u3v0ifcnouqniel2h2qtcdenat.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.596893222706-4jcb37u3v0ifcnouqniel2h2qtcdenat</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB70rtLwUD1y6PCyuYKU-RnQV0gJWh03bI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>596893222706</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Nitzan-Mor.-6-11-LFC-FireBase</string>
+	<key>PROJECT_ID</key>
+	<string>lfc-fixtures-9767e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lfc-fixtures-9767e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:596893222706:ios:f47c1a7d4a6e2b407af92b</string>
+	<key>DATABASE_URL</key>
+	<string>https://lfc-fixtures-9767e.firebaseio.com</string>
+</dict>
+</plist>
