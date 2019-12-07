@@ -9,6 +9,12 @@
 import UIKit
 
 @IBDesignable class CircularShadowedImageView: UIView {
+    
+    @IBInspectable var cornerRadius:CGFloat = 2 {
+        didSet{
+            updateView()
+        }
+    }
 
     @IBInspectable var shadowRadius:Double = 1.0{
         didSet{
@@ -59,7 +65,7 @@ import UIKit
         maskLayer.frame = self.bounds
         maskLayer.path = UIBezierPath(ovalIn: maskLayer.bounds).cgPath
         imageLayer.frame = self.bounds
-        imageLayer.cornerRadius = self.bounds.width / 2
+        imageLayer.cornerRadius = self.bounds.width / cornerRadius
     }
     
     

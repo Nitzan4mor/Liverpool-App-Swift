@@ -71,6 +71,12 @@ import UIKit
            updateLayer()
         }
     }
+    
+    @IBInspectable var isCircle:Bool = false{
+        didSet{
+           updateLayer()
+        }
+    }
 
     
     func updateLayer(){
@@ -89,7 +95,9 @@ import UIKit
         layer.shadowRadius = CGFloat(self.shadowRadius)
         layer.shadowOpacity = Float(self.shadowOpacity)
         
-        layer.cornerRadius = self.bounds.height / 2
+        if isCircle{
+            layer.cornerRadius = self.bounds.height / 2
+        }
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1
     }

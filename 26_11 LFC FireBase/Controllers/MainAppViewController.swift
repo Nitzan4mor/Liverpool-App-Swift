@@ -9,9 +9,21 @@
 import UIKit
 
 class MainAppViewController: UIViewController {
-
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let introductionSB = UIStoryboard(name: "Introduction", bundle: Bundle.main)
+        guard let introductionVC = introductionSB.instantiateInitialViewController() else {return}
+        
+        present(introductionVC, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.backgroundColor = .darkGray
+
 
         // Do any additional setup after loading the view.
     }

@@ -9,82 +9,99 @@
 import UIKit
 
 class FixturesTableViewController: UITableViewController {
+    
+    var fixtures:[Fixture] = []
+    let database = LiverpoolDataBase.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = true
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        database.getFixturesFromFireBase(delegate: self)
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return fixtures.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fixtureCell", for: indexPath) as! FixtureTableViewCell
 
-        // Configure the cell...
+        let currentFixture = fixtures[indexPath.row]
+        
+        cell.dateLabel.text = currentFixture.date
+        cell.homeTeamLabel.text = currentFixture.homeTeamName
+        cell.awayTeamName.text = currentFixture.awayTeamName
+        
+        cell.homeTeamImage.image = currentFixture.homeTeamImage
+        cell.awayTeamImage.image = currentFixture.awayTeamImage
+        
+        switch currentFixture.status {
+        case "Won":
+            cell.statusLabel.text = "Won"
+            cell.statusLabel.textColor = UIColor(red: 0, green: 204/255, blue: 51/255, alpha: 1)
+            break
+        case "Lost":
+            cell.statusLabel.text = "Lost"
+            cell.statusLabel.textColor = .red
+            break
+        case "Draw":
+            cell.statusLabel.text = "Draw"
+            cell.statusLabel.textColor = .blue
+            break
+        default:
+            cell.statusLabel.text = currentFixture.status
+        }
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.bounds.height / 2.9
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let dest = segue.destination as? SpecificFixtureViewController else {return}
+        guard let fixture = sender as? Fixture else {return}
+        
+        dest.fixture = fixture
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chosenFixture = fixtures[indexPath.row]
+        if chosenFixture.score != ""{
+            performSegue(withIdentifier: "goToSpecificFixture", sender: fixtures[indexPath.item])
+        }else {
+            let alertC = UIAlertController(title: "A bit too early, eh?", message: "game havn't ended yet", preferredStyle: .alert)
+            alertC.addAction(.init(title: "Got it", style: .default, handler: nil))
+            present(alertC, animated: true)
+        }
+        
+    }
+    
 
+}
+
+extension FixturesTableViewController : FixturesDataBaseDelegate{
+    func getFixtures(fixtures: [Fixture]) {
+        self.fixtures = fixtures
+        print(fixtures.count)
+        print(self.fixtures.count)
+        tableView.reloadData()
+    }
 }

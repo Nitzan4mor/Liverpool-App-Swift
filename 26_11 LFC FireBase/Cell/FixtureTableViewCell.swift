@@ -9,16 +9,16 @@
 import UIKit
 
 class FixtureTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var awayTeamName: UILabel!
+    
+    @IBOutlet weak var awayTeamImage: CircularShadowedImageView!
+    
+    @IBOutlet weak var homeTeamImage: CircularShadowedImageView!
+    
+    @IBOutlet weak var homeTeamLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
 }

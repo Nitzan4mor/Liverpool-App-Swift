@@ -8,6 +8,18 @@
 
 import UIKit
 
-class Stats: - {
+struct Stats {
+    let biggestDefeat:String
+    let biggestVictory:String
+    let highestScoreMatch:String
+    let topAssistOne:String
+    let topAssistThree:String
+    let topAssistTwo:String
+    let topMinutesOne:String
+    let topMinutesThree:String
+    let topMinutesTwo:String
+    let topScorerOne:String
+    let topScorerThree:String
+    let topScorerTwo:String
 
 }

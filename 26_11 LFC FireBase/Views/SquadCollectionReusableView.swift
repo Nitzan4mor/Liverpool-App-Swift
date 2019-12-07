@@ -9,5 +9,6 @@
 import UIKit
 
 class SquadCollectionReusableView: UICollectionReusableView {
-        
+    @IBOutlet weak var headerLabel: UILabel!
+    
 }

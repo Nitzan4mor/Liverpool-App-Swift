@@ -8,52 +8,71 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
 
 class SquadCollectionViewController: UICollectionViewController {
+    
+    var squad:[[Player]] = []
+    let database = LiverpoolDataBase.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        database.getSquadFromFireBase(delegate: self)
+        
+        
+        
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        guard let dest = segue.destination as? SpecificPlayerViewController else {return}
+        guard let player = sender as? Player else {return}
+        dest.player = player
     }
-    */
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToSpecific", sender: squad[indexPath.section][indexPath.item])
+    }
+    
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return squad.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return squad[section].count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "squadCell", for: indexPath) as! SquadCollectionViewCell
     
-        // Configure the cell
+        let player = squad[indexPath.section][indexPath.item]
+        
+        cell.nameLabel.text = player.name
+        cell.numberLabel.text = player.number
+        
+        cell.imageView.image = player.image
     
         return cell
     }
+    
+    
 
     // MARK: UICollectionViewDelegate
 
@@ -85,5 +104,37 @@ class SquadCollectionViewController: UICollectionViewController {
     
     }
     */
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
 
+           case UICollectionView.elementKindSectionHeader:
+
+               let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) as! SquadCollectionReusableView
+               
+               let headerText = "\(squad[indexPath.section][indexPath.item].position)S"
+               headerView.headerLabel.text = headerText
+
+               return headerView
+
+           case UICollectionView.elementKindSectionFooter:
+               let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Footer", for: indexPath)
+
+               footerView.backgroundColor = UIColor.green
+               return footerView
+
+           default:
+
+               assert(false, "Unexpected element kind")
+           }
+    }
+
+}
+
+extension SquadCollectionViewController : SquadDataBaseDelegate{
+    func getSquad(goalkeepers: [Player], defenders: [Player], midfielders: [Player], forwards: [Player]) {
+        self.squad = [goalkeepers, defenders, midfielders , forwards]
+//        print(self.squad)
+        collectionView.reloadData()
+    } 
 }

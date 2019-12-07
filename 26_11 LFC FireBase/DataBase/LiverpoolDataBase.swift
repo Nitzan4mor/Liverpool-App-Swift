@@ -93,19 +93,72 @@ class LiverpoolDataBase {
         }
     }
     
-    
-    // used for OVER WRITING data in the FireBase Data Base ********
-    //    func writeToDataBase(){
-    //        self.ref = Database.database().reference().child("TableName")
-    //
-    //        for i in 1...25{
-    //            self.ref.child(String(i)).setValue(["key": "value", "key": "value" ,"key": "value" ,"key": "value"  ])
-    //
-    //        }
-    //    }
-    
+    func getStatsFromFireBase(delegate:StatsDataBaseDelegate){
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.ref = Database.database().reference().child("stats")
+            self.ref.observe(.value) { (snapshot) in
+                var topScorers:[String] = []
+                var topAssists:[String] = []
+                var topMinutes:[String] = []
+                var general:[String] = []
+                var stats:Stats?
+                var arr = snapshot.value as? [Any]
+                arr?.remove(at: 0)
+                for item in arr!{
+                    guard let dict = item as? [String:String] else {return}
+                    let biggestDefeat:String = dict["biggestDefeat"] ?? "error"
+                    let biggestVictory:String = dict["biggestVictory"] ?? "error"
+                    let highestScoreMatch:String = dict["highestScoreMatch"] ?? "error"
+                    let topAssistOne:String = dict["topAssistOne"] ?? "error"
+                    let topAssistThree:String = dict["topAssistThree"] ?? "error"
+                    let topAssistTwo:String = dict["topAssistTwo"] ?? "error"
+                    let topMinutesOne:String = dict["topMinutesOne"] ?? "error"
+                    let topMinutesThree:String = dict["topMinutesThree"] ?? "error"
+                    let topMinutesTwo:String = dict["topMinutesTwo"] ?? "error"
+                    let topScorerOne:String = dict["topScorerOne"] ?? "error"
+                    let topScorerThree:String = dict["topScorerThree"] ?? "error"
+                    let topScorerTwo:String = dict["topScorerTwo"] ?? "error"
+                    stats = Stats(biggestDefeat: biggestDefeat, biggestVictory: biggestVictory, highestScoreMatch: highestScoreMatch, topAssistOne: topAssistOne, topAssistThree: topAssistThree, topAssistTwo: topAssistTwo, topMinutesOne: topMinutesOne, topMinutesThree: topMinutesThree, topMinutesTwo: topMinutesTwo, topScorerOne: topScorerOne, topScorerThree: topScorerThree, topScorerTwo: topScorerTwo)
+                    
+                    topScorers.append("1) \(topScorerOne)")
+                    topScorers.append("2) \(topScorerTwo)")
+                    topScorers.append("3) \(topScorerThree)")
+                    
+                    topAssists.append("1) \(topAssistOne)")
+                    topAssists.append("2) \(topAssistTwo)")
+                    topAssists.append("3) \(topAssistThree)")
+                    
+                    topMinutes.append("1) \(topMinutesOne)")
+                    topMinutes.append("2) \(topMinutesTwo)")
+                    topMinutes.append("3) \(topMinutesThree)")
+                    
+                    general.append("Biggest victory - \(biggestVictory)")
+                    general.append("Biggest defeat - \(biggestDefeat)")
+                    general.append("Highest score match - \(highestScoreMatch)")
+                }
+                
+                DispatchQueue.main.async {
+                    delegate.getStats(stats: stats!, topScorers: topScorers, topAssists: topAssists, topMinutes: topMinutes, general: general)
+                }
+            }
+        }
+    }
     
 }
+
+
+// used for OVER WRITING data in the FireBase Data Base ********
+//    func writeToDataBase(){
+//        self.ref = Database.database().reference().child("TableName")
+//
+//        for i in 1...25{
+//            self.ref.child(String(i)).setValue(["key": "value", "key": "value" ,"key": "value" ,"key": "value"  ])
+//
+//        }
+//    }
+
+
+
 
 protocol FixturesDataBaseDelegate {
     func getFixtures(fixtures:[Fixture])
@@ -113,5 +166,9 @@ protocol FixturesDataBaseDelegate {
 
 protocol SquadDataBaseDelegate {
     func getSquad(goalkeepers:[Player], defenders:[Player], midfielders:[Player], forwards:[Player])
+}
+
+protocol StatsDataBaseDelegate {
+    func getStats(stats:Stats,topScorers:[String], topAssists:[String], topMinutes:[String], general:[String])
 }
 

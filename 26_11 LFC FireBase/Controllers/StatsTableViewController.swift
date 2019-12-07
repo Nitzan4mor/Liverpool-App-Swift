@@ -9,38 +9,54 @@
 import UIKit
 
 class StatsTableViewController: UITableViewController {
+    
+    let database = LiverpoolDataBase.shared
+    
+    var stats:[[String]] = [[]]
+    
+    let titles = ["Top Scorers","Top Assists","Most Minutes Played","General Stats"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = true
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        database.getStatsFromFireBase(delegate: self)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return stats.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return stats[section].count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return titles[section]
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath)
+        
+        let stat = stats[indexPath.section][indexPath.row]
+        
+        cell.textLabel?.text = stat
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,4 +103,14 @@ class StatsTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension StatsTableViewController: StatsDataBaseDelegate {
+    func getStats(stats: Stats, topScorers: [String], topAssists: [String], topMinutes: [String], general: [String]) {
+        self.stats = [topScorers, topAssists, topMinutes, general]
+        tableView.reloadData()
+        
+    }
+    
+    
 }

@@ -7,24 +7,52 @@
 //
 
 import UIKit
+import AVFoundation
 
 class IntroductionViewController: UIViewController {
-
+    var player:AVAudioPlayer?
+    @IBOutlet weak var heightLiverpoolLogo: NSLayoutConstraint!
+    
+    @IBOutlet weak var introductionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        playYNWA()
+        
+        introductionLabel.text = introductionText
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        heightLiverpoolLogo.constant = 150
+        
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.4, options: [], animations: {
+            
+            self.view.layoutIfNeeded()
+            
+        }, completion: nil)
     }
-    */
+    
+    var introductionText:String{
+        return """
+        Greetings fellow liverpool supporter!
+        as the liverpool players take the field, in here as well
+        You'll Never Walk Alone!
+        this app provides you Liverpool's fixtures, squad and stats of 2019/2020 season
+        to get started either swipe down or tap the liverpool logo beneath, Enjoy!
+        """
+    }
+    
+    
+    func playYNWA(){
+        guard let url = Bundle.main.url(forResource: "Gerry And The Pacemakers - Youll Never Walk Alone", withExtension: "mp3") else {return}
+        
+        player = try? AVAudioPlayer(contentsOf: url)
+        player?.play()
+    }
 
+    @IBAction func liverpoolLogoTapped(_ sender: UITapGestureRecognizer) {
+        heightLiverpoolLogo.constant = 0
+        dismiss(animated: true)
+    }
 }
