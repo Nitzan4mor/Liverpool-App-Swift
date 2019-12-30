@@ -12,12 +12,22 @@ class SpecificPlayerViewController: UIViewController {
     
     var player:Player!
 
+    @IBOutlet weak var playerImageView: UIImageView!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        playerImageView.layer.borderColor = AppColors.gray.cgColor
+        playerImageView.layer.borderWidth = 4
+        playerImageView.layer.cornerRadius = playerImageView.bounds.height / 10
+        playerImageView.clipsToBounds = true
+        
+        playerImageView.image = player.image
+        dateOfBirthLabel.text = "Date of birth: \(player.dateOfBirth)"
+        nameLabel.text = "Name: \(player.name)"
         descriptionLabel.text = player.description
         
     }

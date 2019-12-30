@@ -16,7 +16,7 @@ class IntroductionViewController: UIViewController {
     @IBOutlet weak var introductionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        playYNWA()
+//        playYNWA()
         
         introductionLabel.text = introductionText
         
@@ -38,8 +38,8 @@ class IntroductionViewController: UIViewController {
         Greetings fellow liverpool supporter!
         as the liverpool players take the field, in here as well
         You'll Never Walk Alone!
-        this app provides you Liverpool's fixtures, squad and stats of 2019/2020 season
-        to get started either swipe down or tap the liverpool logo beneath, Enjoy!
+        this app provides you Liverpool's fixtures, squad and stats of 2019/2020 season!
+        to get started either swipe down or tap the Liverpool logo beneath, Enjoy!
         """
     }
     

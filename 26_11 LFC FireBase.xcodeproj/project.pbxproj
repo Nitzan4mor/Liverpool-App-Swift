@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		82FB0BC76E8CB29E6CE95898 /* Pods_26_11_LFC_FireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB2385511BAD7EED7B434E4 /* Pods_26_11_LFC_FireBase.framework */; };
-		B40AD0A6239A736F00CFCED6 /* 4.Allez Allez Allez.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B40AD0A5239A736F00CFCED6 /* 4.Allez Allez Allez.mp3 */; };
 		B419E03223982D1100379B5C /* SortingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419E03123982D1100379B5C /* SortingHelper.swift */; };
 		B438350A239AB23A00B0B1DF /* SquadCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4383509239AB23A00B0B1DF /* SquadCollectionReusableView.swift */; };
 		B4495B47239114AC0042847C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4495B46239114AC0042847C /* GradientView.swift */; };
@@ -16,8 +15,8 @@
 		B4495B4B239146590042847C /* CircularShadowedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4495B4A239146590042847C /* CircularShadowedImageView.swift */; };
 		B4495B4F239153070042847C /* FixtureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4495B4E239153070042847C /* FixtureTableViewCell.swift */; };
 		B470CF9F2395891B007F463E /* SpecificFixtureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B470CF9E2395891B007F463E /* SpecificFixtureViewController.swift */; };
+		B494312C23B4D23700EA83E5 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494312B23B4D23700EA83E5 /* AppColors.swift */; };
 		B4A4FE042393C2ED0042A4DE /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A4FE032393C2ED0042A4DE /* Introduction.storyboard */; };
-		B4A4FE072393C3FA0042A4DE /* Gerry And The Pacemakers - Youll Never Walk Alone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4A4FE062393C3FA0042A4DE /* Gerry And The Pacemakers - Youll Never Walk Alone.mp3 */; };
 		B4A4FE092393C4260042A4DE /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4FE082393C4260042A4DE /* IntroductionViewController.swift */; };
 		B4AC9ED4239AD9BD00F0DF2F /* SpecificPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC9ED3239AD9BD00F0DF2F /* SpecificPlayerViewController.swift */; };
 		B4B4B5A5238ECA7E00AC997F /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B5A2238EC92C00AC997F /* Fixture.swift */; };
@@ -35,13 +34,19 @@
 		B4D4DDB6239698ED0052DED2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDB5239698ED0052DED2 /* Player.swift */; };
 		B4DC2336239B9A5100293466 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DC2335239B9A5100293466 /* Stats.swift */; };
 		B4DC2338239BA2BF00293466 /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DC2337239BA2BF00293466 /* StatsTableViewController.swift */; };
+		B4E2CC1223BA59A900EC1298 /* Allez Allez Allez.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */; };
+		B4E2CC1323BA59A900EC1298 /* We Love You Liverpool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */; };
+		B4E2CC1423BA59A900EC1298 /* YNWA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */; };
+		B4E2CC1623BA5B6700EC1298 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E2CC1523BA5B6700EC1298 /* SongsViewController.swift */; };
+		B4E2CC1A23BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */; };
+		B4E2CC1B23BA5C7500EC1298 /* Bobby Firmino Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1823BA5C7500EC1298 /* Bobby Firmino Song.mp3 */; };
+		B4E2CC1C23BA5C7500EC1298 /* Mo Salah Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1923BA5C7500EC1298 /* Mo Salah Song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		178E7739719721E7B7831B59 /* Pods-26_11 LFC FireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-26_11 LFC FireBase.debug.xcconfig"; path = "Target Support Files/Pods-26_11 LFC FireBase/Pods-26_11 LFC FireBase.debug.xcconfig"; sourceTree = "<group>"; };
 		1AF8E041EACD8BF63B4E0A76 /* Pods-26_11 LFC FireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-26_11 LFC FireBase.release.xcconfig"; path = "Target Support Files/Pods-26_11 LFC FireBase/Pods-26_11 LFC FireBase.release.xcconfig"; sourceTree = "<group>"; };
 		3CB2385511BAD7EED7B434E4 /* Pods_26_11_LFC_FireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_26_11_LFC_FireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B40AD0A5239A736F00CFCED6 /* 4.Allez Allez Allez.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.Allez Allez Allez.mp3"; sourceTree = "<group>"; };
 		B419E03123982D1100379B5C /* SortingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHelper.swift; sourceTree = "<group>"; };
 		B4383509239AB23A00B0B1DF /* SquadCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadCollectionReusableView.swift; sourceTree = "<group>"; };
 		B4495B46239114AC0042847C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -49,8 +54,8 @@
 		B4495B4A239146590042847C /* CircularShadowedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShadowedImageView.swift; sourceTree = "<group>"; };
 		B4495B4E239153070042847C /* FixtureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureTableViewCell.swift; sourceTree = "<group>"; };
 		B470CF9E2395891B007F463E /* SpecificFixtureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificFixtureViewController.swift; sourceTree = "<group>"; };
+		B494312B23B4D23700EA83E5 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B4A4FE032393C2ED0042A4DE /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
-		B4A4FE062393C3FA0042A4DE /* Gerry And The Pacemakers - Youll Never Walk Alone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gerry And The Pacemakers - Youll Never Walk Alone.mp3"; sourceTree = "<group>"; };
 		B4A4FE082393C4260042A4DE /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		B4AC9ED3239AD9BD00F0DF2F /* SpecificPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificPlayerViewController.swift; sourceTree = "<group>"; };
 		B4B4B5A2238EC92C00AC997F /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
@@ -70,6 +75,13 @@
 		B4D4DDB5239698ED0052DED2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B4DC2335239B9A5100293466 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		B4DC2337239BA2BF00293466 /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
+		B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Allez Allez Allez.mp3"; sourceTree = "<group>"; };
+		B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "We Love You Liverpool.mp3"; sourceTree = "<group>"; };
+		B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YNWA.mp3; sourceTree = "<group>"; };
+		B4E2CC1523BA5B6700EC1298 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Virgil Van Dijk Song.mp3"; sourceTree = "<group>"; };
+		B4E2CC1823BA5C7500EC1298 /* Bobby Firmino Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bobby Firmino Song.mp3"; sourceTree = "<group>"; };
+		B4E2CC1923BA5C7500EC1298 /* Mo Salah Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mo Salah Song.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +135,12 @@
 		B4A4FE052393C3FA0042A4DE /* mp3 */ = {
 			isa = PBXGroup;
 			children = (
-				B4A4FE062393C3FA0042A4DE /* Gerry And The Pacemakers - Youll Never Walk Alone.mp3 */,
-				B40AD0A5239A736F00CFCED6 /* 4.Allez Allez Allez.mp3 */,
+				B4E2CC1823BA5C7500EC1298 /* Bobby Firmino Song.mp3 */,
+				B4E2CC1923BA5C7500EC1298 /* Mo Salah Song.mp3 */,
+				B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */,
+				B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */,
+				B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */,
+				B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */,
 			);
 			path = mp3;
 			sourceTree = "<group>";
@@ -135,6 +151,7 @@
 				B4B4B5A2238EC92C00AC997F /* Fixture.swift */,
 				B4D4DDB5239698ED0052DED2 /* Player.swift */,
 				B4DC2335239B9A5100293466 /* Stats.swift */,
+				B494312B23B4D23700EA83E5 /* AppColors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +174,7 @@
 				B4D4DDB12396966F0052DED2 /* SquadCollectionViewController.swift */,
 				B4AC9ED3239AD9BD00F0DF2F /* SpecificPlayerViewController.swift */,
 				B4DC2337239BA2BF00293466 /* StatsTableViewController.swift */,
+				B4E2CC1523BA5B6700EC1298 /* SongsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,13 +288,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40AD0A6239A736F00CFCED6 /* 4.Allez Allez Allez.mp3 in Resources */,
 				B4A4FE042393C2ED0042A4DE /* Introduction.storyboard in Resources */,
+				B4E2CC1B23BA5C7500EC1298 /* Bobby Firmino Song.mp3 in Resources */,
 				B4BFB0F7238D426200490CBD /* LaunchScreen.storyboard in Resources */,
-				B4A4FE072393C3FA0042A4DE /* Gerry And The Pacemakers - Youll Never Walk Alone.mp3 in Resources */,
 				B4BFB0FF238D443C00490CBD /* GoogleService-Info.plist in Resources */,
 				B4BFB0F4238D426200490CBD /* Assets.xcassets in Resources */,
+				B4E2CC1A23BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 in Resources */,
+				B4E2CC1323BA59A900EC1298 /* We Love You Liverpool.mp3 in Resources */,
+				B4E2CC1423BA59A900EC1298 /* YNWA.mp3 in Resources */,
 				B4BFB0F2238D426000490CBD /* Main.storyboard in Resources */,
+				B4E2CC1C23BA5C7500EC1298 /* Mo Salah Song.mp3 in Resources */,
+				B4E2CC1223BA59A900EC1298 /* Allez Allez Allez.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +362,7 @@
 				B4AC9ED4239AD9BD00F0DF2F /* SpecificPlayerViewController.swift in Sources */,
 				B470CF9F2395891B007F463E /* SpecificFixtureViewController.swift in Sources */,
 				B4495B47239114AC0042847C /* GradientView.swift in Sources */,
+				B4E2CC1623BA5B6700EC1298 /* SongsViewController.swift in Sources */,
 				B4495B4B239146590042847C /* CircularShadowedImageView.swift in Sources */,
 				B4D4DDB22396966F0052DED2 /* SquadCollectionViewController.swift in Sources */,
 				B4495B4F239153070042847C /* FixtureTableViewCell.swift in Sources */,
@@ -347,6 +370,7 @@
 				B438350A239AB23A00B0B1DF /* SquadCollectionReusableView.swift in Sources */,
 				B4BFB0ED238D426000490CBD /* SceneDelegate.swift in Sources */,
 				B4D4DDB6239698ED0052DED2 /* Player.swift in Sources */,
+				B494312C23B4D23700EA83E5 /* AppColors.swift in Sources */,
 				B4B4B5A5238ECA7E00AC997F /* Fixture.swift in Sources */,
 				B4DC2338239BA2BF00293466 /* StatsTableViewController.swift in Sources */,
 			);
@@ -502,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nitzan-Mor.-6-11-LFC-FireBase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -520,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nitzan-Mor.-6-11-LFC-FireBase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

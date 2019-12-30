@@ -42,6 +42,14 @@ class StatsTableViewController: UITableViewController {
         return titles[section]
     }
 
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = AppColors.lightGray
+        view.layer.borderColor = AppColors.gray.cgColor
+        view.layer.borderWidth = 2
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = AppColors.lightRed
+        header.textLabel?.font = UIFont(name: "Thonburi", size: 22)
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath)
@@ -55,6 +63,10 @@ class StatsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
     
 

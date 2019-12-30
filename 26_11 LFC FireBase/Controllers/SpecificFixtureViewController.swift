@@ -31,9 +31,7 @@ class SpecificFixtureViewController: UIViewController {
     	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        playAllezAllezAllez()
-        
+                
         dateLabel.text = "Date: \(fixture.date)"
         leagueLabel.text = "League: \(fixture.league)"
         stadiumLabel.text = "Stadium: \(fixture.stadium) in front of \(fixture.attendance) fans!"
@@ -43,18 +41,32 @@ class SpecificFixtureViewController: UIViewController {
         awayTeamLabel.text = "Away team: \(fixture.awayTeamName)"
         homeTeamScorersLabel.text = fixture.homeTeamScorers
         awayTeamScorersLabel.text = fixture.awayTeamScorers
-        statusLabel.text = "Status: \(fixture.status)"
+        statusLabel.text = "Liverpool \(fixture.status)"
         homeTeamImage.image = fixture.homeTeamImage
         awayTeamImage.image = fixture.awayTeamImage
+        
+        switch fixture.status {
+        case "Won":
+            statusLabel.textColor = AppColors.statusGreen
+            break
+        case "Lost":
+            statusLabel.textColor = .red
+            break
+        case "Draw":
+            statusLabel.textColor = .blue
+            break
+        default:
+            statusLabel.textColor = .systemTeal
+        }
 
     }
-    
-    func playAllezAllezAllez(){
-        guard let url = Bundle.main.url(forResource: "4.Allez Allez Allez", withExtension: "mp3") else {return}
-        
-        player = try? AVAudioPlayer(contentsOf: url)
-        player?.play()
-    }
+//
+//    func playAllezAllezAllez(){
+//        guard let url = Bundle.main.url(forResource: "4.Allez Allez Allez", withExtension: "mp3") else {return}
+//
+//        player = try? AVAudioPlayer(contentsOf: url)
+//        player?.play()
+//    }
     
 
 

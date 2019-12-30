@@ -10,35 +10,48 @@ import UIKit
 
 class FixturesTableViewController: UITableViewController {
     
+    
+    
     var fixtures:[Fixture] = []
     let database = LiverpoolDataBase.shared
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
-         self.clearsSelectionOnViewWillAppear = true
-
+        self.clearsSelectionOnViewWillAppear = true
+        
         database.getFixturesFromFireBase(delegate: self)
         
+        //        for i in 0..<fixtures.count{
+        //            if fixtures[i].status.count == 5{
+        //                let indexPath = IndexPath(row: i, section: 0)
+        //                tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        //            }
+        //        }
+        
+        
+        
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return fixtures.count
     }
-
+    
+    
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fixtureCell", for: indexPath) as! FixtureTableViewCell
-
+        
         let currentFixture = fixtures[indexPath.row]
         
         cell.dateLabel.text = currentFixture.date
@@ -48,10 +61,19 @@ class FixturesTableViewController: UITableViewController {
         cell.homeTeamImage.image = currentFixture.homeTeamImage
         cell.awayTeamImage.image = currentFixture.awayTeamImage
         
+//        if currentFixture.homeTeamName == "Liverpool"{
+//            cell.homeTeamLabel.textColor = AppColors.red
+//            cell.awayTeamName.textColor = .black
+//        }
+//        if currentFixture.awayTeamName == "Liverpool"{
+//            cell.awayTeamName.textColor = AppColors.red
+//            cell.homeTeamLabel.textColor = .black
+//        }
+        
         switch currentFixture.status {
         case "Won":
             cell.statusLabel.text = "Won"
-            cell.statusLabel.textColor = UIColor(red: 0, green: 204/255, blue: 51/255, alpha: 1)
+            cell.statusLabel.textColor = AppColors.statusGreen
             break
         case "Lost":
             cell.statusLabel.text = "Lost"
@@ -62,9 +84,10 @@ class FixturesTableViewController: UITableViewController {
             cell.statusLabel.textColor = .blue
             break
         default:
+            cell.statusLabel.textColor = .systemTeal
             cell.statusLabel.text = currentFixture.status
         }
-
+        
         return cell
     }
     
@@ -73,7 +96,7 @@ class FixturesTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dest = segue.destination as? SpecificFixtureViewController else {return}
@@ -87,21 +110,27 @@ class FixturesTableViewController: UITableViewController {
         if chosenFixture.score != ""{
             performSegue(withIdentifier: "goToSpecificFixture", sender: fixtures[indexPath.item])
         }else {
-            let alertC = UIAlertController(title: "A bit too early, eh?", message: "game havn't ended yet", preferredStyle: .alert)
-            alertC.addAction(.init(title: "Got it", style: .default, handler: nil))
+            let alertC = UIAlertController(title: "Sorry", message: "the fixture hasn't updated yet", preferredStyle: .alert)
+            alertC.addAction(.init(title: "OK", style: .default, handler: nil))
             present(alertC, animated: true)
         }
-        
     }
-    
-
 }
 
 extension FixturesTableViewController : FixturesDataBaseDelegate{
     func getFixtures(fixtures: [Fixture]) {
         self.fixtures = fixtures
-        print(fixtures.count)
-        print(self.fixtures.count)
         tableView.reloadData()
+        selectRowForNextGame()
+    }
+    
+    func selectRowForNextGame(){
+        for i in 0..<fixtures.count{
+            if fixtures[i].status != "Won" && fixtures[i].status != "Draw" && fixtures[i].status != "Lost"{
+                let indexPath = IndexPath(row: i, section: 0)
+                tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+                return
+            }
+        }
     }
 }

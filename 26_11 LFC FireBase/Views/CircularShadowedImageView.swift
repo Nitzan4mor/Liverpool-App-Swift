@@ -48,7 +48,7 @@ import UIKit
     
     lazy var imageLayer:CALayer = {
        let imageLayer = CALayer()
-        imageLayer.borderColor = UIColor.black.cgColor
+        imageLayer.borderColor = AppColors.gray.cgColor
         imageLayer.borderWidth = 1.5
         imageLayer.masksToBounds = true
         return imageLayer

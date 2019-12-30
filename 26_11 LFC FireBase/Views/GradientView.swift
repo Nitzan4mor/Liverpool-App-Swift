@@ -98,7 +98,7 @@ import UIKit
         if isCircle{
             layer.cornerRadius = self.bounds.height / 2
         }
-        layer.borderColor = UIColor.black.cgColor
-        layer.borderWidth = 1
+        layer.borderColor = AppColors.gray.cgColor
+        layer.borderWidth = 1.5
     }
 }
