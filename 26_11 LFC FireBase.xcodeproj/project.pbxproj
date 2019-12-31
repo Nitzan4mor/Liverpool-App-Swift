@@ -29,6 +29,7 @@
 		B4BFB0F4238D426200490CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BFB0F3238D426200490CBD /* Assets.xcassets */; };
 		B4BFB0F7238D426200490CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BFB0F5238D426200490CBD /* LaunchScreen.storyboard */; };
 		B4BFB0FF238D443C00490CBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4BFB0FE238D443C00490CBD /* GoogleService-Info.plist */; };
+		B4CCE82523BB547000412A1A /* YNWA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4CCE82423BB547000412A1A /* YNWA.mp3 */; };
 		B4D4DDB22396966F0052DED2 /* SquadCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDB12396966F0052DED2 /* SquadCollectionViewController.swift */; };
 		B4D4DDB4239696CA0052DED2 /* SquadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDB3239696CA0052DED2 /* SquadCollectionViewCell.swift */; };
 		B4D4DDB6239698ED0052DED2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDB5239698ED0052DED2 /* Player.swift */; };
@@ -36,7 +37,6 @@
 		B4DC2338239BA2BF00293466 /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DC2337239BA2BF00293466 /* StatsTableViewController.swift */; };
 		B4E2CC1223BA59A900EC1298 /* Allez Allez Allez.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */; };
 		B4E2CC1323BA59A900EC1298 /* We Love You Liverpool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */; };
-		B4E2CC1423BA59A900EC1298 /* YNWA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */; };
 		B4E2CC1623BA5B6700EC1298 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E2CC1523BA5B6700EC1298 /* SongsViewController.swift */; };
 		B4E2CC1A23BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */; };
 		B4E2CC1B23BA5C7500EC1298 /* Bobby Firmino Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4E2CC1823BA5C7500EC1298 /* Bobby Firmino Song.mp3 */; };
@@ -70,6 +70,7 @@
 		B4BFB0F6238D426200490CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4BFB0F8238D426200490CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4BFB0FE238D443C00490CBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4CCE82423BB547000412A1A /* YNWA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YNWA.mp3; sourceTree = "<group>"; };
 		B4D4DDB12396966F0052DED2 /* SquadCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadCollectionViewController.swift; sourceTree = "<group>"; };
 		B4D4DDB3239696CA0052DED2 /* SquadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4D4DDB5239698ED0052DED2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		B4DC2337239BA2BF00293466 /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
 		B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Allez Allez Allez.mp3"; sourceTree = "<group>"; };
 		B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "We Love You Liverpool.mp3"; sourceTree = "<group>"; };
-		B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YNWA.mp3; sourceTree = "<group>"; };
 		B4E2CC1523BA5B6700EC1298 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
 		B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Virgil Van Dijk Song.mp3"; sourceTree = "<group>"; };
 		B4E2CC1823BA5C7500EC1298 /* Bobby Firmino Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bobby Firmino Song.mp3"; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 				B4E2CC1923BA5C7500EC1298 /* Mo Salah Song.mp3 */,
 				B4E2CC1723BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 */,
 				B4E2CC0F23BA59A900EC1298 /* Allez Allez Allez.mp3 */,
+				B4CCE82423BB547000412A1A /* YNWA.mp3 */,
 				B4E2CC1023BA59A900EC1298 /* We Love You Liverpool.mp3 */,
-				B4E2CC1123BA59A900EC1298 /* YNWA.mp3 */,
 			);
 			path = mp3;
 			sourceTree = "<group>";
@@ -292,10 +292,10 @@
 				B4E2CC1B23BA5C7500EC1298 /* Bobby Firmino Song.mp3 in Resources */,
 				B4BFB0F7238D426200490CBD /* LaunchScreen.storyboard in Resources */,
 				B4BFB0FF238D443C00490CBD /* GoogleService-Info.plist in Resources */,
+				B4CCE82523BB547000412A1A /* YNWA.mp3 in Resources */,
 				B4BFB0F4238D426200490CBD /* Assets.xcassets in Resources */,
 				B4E2CC1A23BA5C7500EC1298 /* Virgil Van Dijk Song.mp3 in Resources */,
 				B4E2CC1323BA59A900EC1298 /* We Love You Liverpool.mp3 in Resources */,
-				B4E2CC1423BA59A900EC1298 /* YNWA.mp3 in Resources */,
 				B4BFB0F2238D426000490CBD /* Main.storyboard in Resources */,
 				B4E2CC1C23BA5C7500EC1298 /* Mo Salah Song.mp3 in Resources */,
 				B4E2CC1223BA59A900EC1298 /* Allez Allez Allez.mp3 in Resources */,
@@ -518,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL7A8356DL;
 				INFOPLIST_FILE = "26_11 LFC FireBase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL7A8356DL;
 				INFOPLIST_FILE = "26_11 LFC FireBase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -7,16 +7,14 @@
 //
 
 import UIKit
-import AVFoundation
 
 class IntroductionViewController: UIViewController {
-    var player:AVAudioPlayer?
+    
     @IBOutlet weak var heightLiverpoolLogo: NSLayoutConstraint!
     
     @IBOutlet weak var introductionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        playYNWA()
         
         introductionLabel.text = introductionText
         
@@ -38,17 +36,10 @@ class IntroductionViewController: UIViewController {
         Greetings fellow liverpool supporter!
         as the liverpool players take the field, in here as well
         You'll Never Walk Alone!
-        this app provides you Liverpool's fixtures, squad and stats of 2019/2020 season!
+        in here you will find Liverpool's fixtures, squad and stats of 2019/2020 season!
+        and you will be able to get in the Anfield mood with fan's songs!
         to get started either swipe down or tap the Liverpool logo beneath, Enjoy!
         """
-    }
-    
-    
-    func playYNWA(){
-        guard let url = Bundle.main.url(forResource: "Gerry And The Pacemakers - Youll Never Walk Alone", withExtension: "mp3") else {return}
-        
-        player = try? AVAudioPlayer(contentsOf: url)
-        player?.play()
     }
 
     @IBAction func liverpoolLogoTapped(_ sender: UITapGestureRecognizer) {

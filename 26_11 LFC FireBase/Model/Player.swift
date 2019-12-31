@@ -61,6 +61,8 @@ struct Player {
             return UIImage(named: "origi") ?? UIImage(named: "LFC")!
         case "Clyne":
             return UIImage(named: "clyne") ?? UIImage(named: "LFC")!
+        case "Minamino":
+            return UIImage(named: "minamino") ?? UIImage(named: "LFC")!
         default:
             return UIImage(named: "LFC")!
         }

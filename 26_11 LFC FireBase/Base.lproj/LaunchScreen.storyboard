@@ -15,18 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Liu-nI-Dug">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tTT-N8-S8b">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="PKq-7S-KQg"/>
-                                    <constraint firstAttribute="height" constant="200" id="hyq-bO-ykC"/>
+                                    <constraint firstAttribute="height" constant="200" id="WxG-pO-Kta"/>
+                                    <constraint firstAttribute="width" constant="200" id="dpK-ke-pmd"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Liu-nI-Dug" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2lq-cW-KtE"/>
-                            <constraint firstItem="Liu-nI-Dug" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wjN-To-bxk"/>
+                            <constraint firstItem="tTT-N8-S8b" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Sl6-Ud-y8c"/>
+                            <constraint firstItem="tTT-N8-S8b" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="yaR-m6-yqH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="300" height="300"/>
+        <image name="logo" width="526" height="472"/>
     </resources>
 </document>

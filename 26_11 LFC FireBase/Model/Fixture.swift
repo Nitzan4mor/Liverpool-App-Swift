@@ -88,6 +88,12 @@ struct Fixture{
             return UIImage(named: "WHU")!
             case "WOL":
             return UIImage(named: "WOL")!
+            case "MON":
+            return UIImage(named: "MON")!
+            case "FLM":
+            return UIImage(named: "FLM")!
+            case "ATM":
+            return UIImage(named: "ATM")!
             
         default:
             return UIImage(named: "LFC")!

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1HW-zd-TBp">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,29 +13,29 @@
             <objects>
                 <tableViewController id="XhF-Xl-MFE" customClass="FixturesTableViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VHK-ya-pWY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fixtureCell" rowHeight="323" id="5MG-zP-NiI" customClass="FixtureTableViewCell" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="323"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fixtureCell" rowHeight="280" id="5MG-zP-NiI" customClass="FixtureTableViewCell" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="280"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5MG-zP-NiI" id="sdq-AV-rZ8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="323"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j18-bl-GJd">
-                                            <rect key="frame" x="179.5" y="19" width="55" height="31.5"/>
-                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                            <rect key="frame" x="184.33333333333334" y="19" width="45.666666666666657" height="26.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RW5-aa-HrU">
-                                            <rect key="frame" x="16" y="61.5" width="120" height="200"/>
+                                            <rect key="frame" x="16" y="32" width="120" height="200"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U65-69-CHd">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
-                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="21"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -68,11 +68,11 @@
                                             </constraints>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bSE-lp-Nin">
-                                            <rect key="frame" x="278" y="61.5" width="120" height="200"/>
+                                            <rect key="frame" x="278" y="32" width="120" height="200"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-5G-rBe">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
-                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="21"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -105,22 +105,21 @@
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngx-fY-aZJ">
-                                            <rect key="frame" x="172.5" y="277.5" width="69.5" height="26.5"/>
-                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                            <rect key="frame" x="175.66666666666666" y="240" width="63" height="21"/>
+                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="j18-bl-GJd" firstAttribute="centerX" secondItem="sdq-AV-rZ8" secondAttribute="centerX" id="19S-yi-EGl"/>
-                                        <constraint firstItem="bSE-lp-Nin" firstAttribute="centerY" secondItem="sdq-AV-rZ8" secondAttribute="centerY" id="39g-1e-94G"/>
-                                        <constraint firstItem="ngx-fY-aZJ" firstAttribute="top" secondItem="RW5-aa-HrU" secondAttribute="bottom" constant="16" id="6Mq-xA-g61"/>
-                                        <constraint firstItem="RW5-aa-HrU" firstAttribute="centerY" secondItem="sdq-AV-rZ8" secondAttribute="centerY" id="6lp-DK-HIB"/>
+                                        <constraint firstItem="bSE-lp-Nin" firstAttribute="centerY" secondItem="sdq-AV-rZ8" secondAttribute="centerY" constant="-8" id="39g-1e-94G"/>
+                                        <constraint firstItem="RW5-aa-HrU" firstAttribute="centerY" secondItem="sdq-AV-rZ8" secondAttribute="centerY" constant="-8" id="6lp-DK-HIB"/>
                                         <constraint firstItem="j18-bl-GJd" firstAttribute="top" secondItem="sdq-AV-rZ8" secondAttribute="topMargin" constant="8" id="IPs-r8-iWc"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ngx-fY-aZJ" secondAttribute="bottom" constant="8" id="Mbk-8M-dtk"/>
                                         <constraint firstItem="ngx-fY-aZJ" firstAttribute="centerX" secondItem="sdq-AV-rZ8" secondAttribute="centerX" id="c8H-gZ-gSN"/>
                                         <constraint firstAttribute="trailing" secondItem="bSE-lp-Nin" secondAttribute="trailing" constant="16" id="eEe-Ng-yOZ"/>
-                                        <constraint firstItem="ngx-fY-aZJ" firstAttribute="top" secondItem="bSE-lp-Nin" secondAttribute="bottom" constant="16" id="jbX-MD-wYi"/>
+                                        <constraint firstItem="ngx-fY-aZJ" firstAttribute="top" secondItem="bSE-lp-Nin" secondAttribute="bottom" constant="8" id="jbX-MD-wYi"/>
                                         <constraint firstItem="RW5-aa-HrU" firstAttribute="leading" secondItem="sdq-AV-rZ8" secondAttribute="leading" constant="16" id="zEc-OL-qam"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -154,7 +153,7 @@
             <objects>
                 <collectionViewController id="gBb-9h-gxX" customClass="SquadCollectionViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tbw-qY-HQC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="lU7-Wn-hDR">
@@ -256,7 +255,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyw-1n-nef" userLabel="Header">
-                                    <rect key="frame" x="181.5" y="12" width="51.5" height="26.5"/>
+                                    <rect key="frame" x="181.33333333333334" y="11.999999999999998" width="51.333333333333343" height="26.333333333333329"/>
                                     <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                     <color key="textColor" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
@@ -294,19 +293,19 @@
             <objects>
                 <tableViewController id="fmj-7N-hDI" customClass="StatsTableViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y2W-wa-XEl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statsCell" textLabel="T3r-iq-dYh" style="IBUITableViewCellStyleDefault" id="0gt-rZ-K72">
-                                <rect key="frame" x="0.0" y="28" width="414" height="54.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="54.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0gt-rZ-K72" id="WPk-Tk-Ld2">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T3r-iq-dYh">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="54.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="54.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -350,29 +349,29 @@
             <objects>
                 <viewController id="Nrb-AL-jIq" customClass="SpecificPlayerViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a5O-cT-Bes" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-QG-wft">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NBG-eD-sXR">
-                                        <rect key="frame" x="16" y="8" width="381" height="295"/>
+                                        <rect key="frame" x="16" y="8" width="381" height="294.66666666666669"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="11R-QJ-rkv">
                                                 <rect key="frame" x="0.0" y="0.0" width="381" height="243"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tom-9v-RKm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="190.5" height="243"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="190.33333333333334" height="243"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bd-K6-Wde">
-                                                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="121.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="190.33333333333334" height="121.66666666666667"/>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
                                                                 <color key="textColor" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HT-Gn-jEC">
-                                                                <rect key="frame" x="0.0" y="121.5" width="190.5" height="121.5"/>
+                                                                <rect key="frame" x="0.0" y="121.66666666666666" width="190.33333333333334" height="121.33333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
@@ -380,12 +379,12 @@
                                                         </subviews>
                                                     </stackView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alisson" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-1G-ciW">
-                                                        <rect key="frame" x="190.5" y="0.0" width="190.5" height="243"/>
+                                                        <rect key="frame" x="190.33333333333337" y="0.0" width="190.66666666666663" height="243"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b08-gZ-lsn">
-                                                <rect key="frame" x="0.0" y="267" width="381" height="28"/>
+                                                <rect key="frame" x="0.0" y="267" width="381" height="27.666666666666686"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
@@ -401,7 +400,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="NBG-eD-sXR" firstAttribute="bottom" secondItem="gjo-cp-1VA" secondAttribute="bottom" constant="8" id="9j9-Pc-4pd"/>
+                                    <constraint firstItem="NBG-eD-sXR" firstAttribute="bottom" secondItem="gjo-cp-1VA" secondAttribute="bottom" id="9j9-Pc-4pd"/>
                                     <constraint firstItem="NBG-eD-sXR" firstAttribute="top" secondItem="gjo-cp-1VA" secondAttribute="top" constant="8" id="SV7-Tg-iGS"/>
                                     <constraint firstItem="NBG-eD-sXR" firstAttribute="width" secondItem="CjD-A1-rwh" secondAttribute="width" multiplier="0.92" id="l0Y-p8-eh5"/>
                                     <constraint firstItem="NBG-eD-sXR" firstAttribute="trailing" secondItem="gjo-cp-1VA" secondAttribute="trailing" constant="16" id="pqN-7f-JjA"/>
@@ -445,52 +444,52 @@
             <objects>
                 <viewController id="izV-kA-y9e" customClass="SpecificFixtureViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jP4-ef-7Lc" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6Oq-8D-qLq">
-                                <rect key="frame" x="16" y="112" width="382" height="250"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6Oq-8D-qLq">
+                                <rect key="frame" x="16" y="68" width="382" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPg-bx-gvr">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20P-zD-wUt">
-                                        <rect key="frame" x="0.0" y="66.5" width="382" height="50.5"/>
-                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="50" width="382" height="32.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-tq-rJp">
-                                        <rect key="frame" x="0.0" y="133" width="382" height="50.5"/>
-                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-tq-rJp">
+                                        <rect key="frame" x="0.0" y="98.333333333333343" width="382" height="32.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Referee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzS-rm-Ywy">
-                                        <rect key="frame" x="0.0" y="199.5" width="382" height="50.5"/>
-                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="146.66666666666666" width="382" height="53.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="las-Ou-Ods"/>
+                                    <constraint firstAttribute="height" constant="200" id="las-Ou-Ods"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="v5q-e5-CBc">
-                                <rect key="frame" x="16" y="394" width="382" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="v5q-e5-CBc">
+                                <rect key="frame" x="16" y="284" width="382" height="23.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home team " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfL-vb-fr0">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="23.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away team " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-uO-N4Y">
-                                        <rect key="frame" x="231" y="0.0" width="151" height="24"/>
+                                        <rect key="frame" x="223" y="0.0" width="159" height="23.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -498,7 +497,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-kJ-mzu">
-                                <rect key="frame" x="16" y="450" width="382" height="120"/>
+                                <rect key="frame" x="16" y="339.66666666666669" width="382" height="120"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y1-T6-6Ow" customClass="CircularShadowedImageView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="151" height="120"/>
@@ -550,16 +549,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="pog-er-qGc">
-                                <rect key="frame" x="16" y="602" width="382" height="20"/>
+                                <rect key="frame" x="16" y="491.66666666666669" width="382" height="19.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-fb-qx3">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="19.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mJ-a2-1Cr">
-                                        <rect key="frame" x="231" y="0.0" width="151" height="20"/>
+                                        <rect key="frame" x="231" y="0.0" width="151" height="19.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -567,13 +566,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-zh-Nhx">
-                                <rect key="frame" x="180" y="654" width="54.5" height="26.5"/>
+                                <rect key="frame" x="179.66666666666666" y="527.33333333333337" width="54.666666666666657" height="26.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIk-oT-qpn">
-                                <rect key="frame" x="175.5" y="712.5" width="63" height="26.5"/>
+                                <rect key="frame" x="175.66666666666666" y="593.66666666666663" width="63" height="26.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -581,7 +580,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lIk-oT-qpn" firstAttribute="top" secondItem="6Ee-zh-Nhx" secondAttribute="bottom" constant="32" id="2hj-E0-jJ3"/>
+                            <constraint firstItem="lIk-oT-qpn" firstAttribute="top" secondItem="6Ee-zh-Nhx" secondAttribute="bottom" constant="40" id="2hj-E0-jJ3"/>
                             <constraint firstItem="9ml-4W-Bic" firstAttribute="trailing" secondItem="v5q-e5-CBc" secondAttribute="trailing" constant="16" id="ACM-pL-8Ua"/>
                             <constraint firstItem="wFr-kJ-mzu" firstAttribute="top" secondItem="v5q-e5-CBc" secondAttribute="bottom" constant="32" id="D7c-fr-nmT"/>
                             <constraint firstItem="wFr-kJ-mzu" firstAttribute="centerX" secondItem="jP4-ef-7Lc" secondAttribute="centerX" id="HnQ-If-6Ka"/>
@@ -595,10 +594,10 @@
                             <constraint firstItem="9ml-4W-Bic" firstAttribute="trailing" secondItem="wFr-kJ-mzu" secondAttribute="trailing" constant="16" id="aJ6-tp-bWj"/>
                             <constraint firstItem="9ml-4W-Bic" firstAttribute="trailing" secondItem="6Oq-8D-qLq" secondAttribute="trailing" constant="16" id="bMo-5f-N5P"/>
                             <constraint firstItem="wFr-kJ-mzu" firstAttribute="leading" secondItem="9ml-4W-Bic" secondAttribute="leading" constant="16" id="ekS-Ci-mQq"/>
-                            <constraint firstItem="6Ee-zh-Nhx" firstAttribute="top" secondItem="pog-er-qGc" secondAttribute="bottom" constant="32" id="h9s-fp-q2W"/>
+                            <constraint firstItem="6Ee-zh-Nhx" firstAttribute="top" secondItem="pog-er-qGc" secondAttribute="bottom" constant="16" id="h9s-fp-q2W"/>
                             <constraint firstItem="lIk-oT-qpn" firstAttribute="centerX" secondItem="jP4-ef-7Lc" secondAttribute="centerX" id="mul-8l-h68"/>
                             <constraint firstItem="v5q-e5-CBc" firstAttribute="leading" secondItem="9ml-4W-Bic" secondAttribute="leading" constant="16" id="oB2-qW-dIy"/>
-                            <constraint firstItem="v5q-e5-CBc" firstAttribute="top" secondItem="6Oq-8D-qLq" secondAttribute="bottom" constant="32" id="ufi-NN-Qg2"/>
+                            <constraint firstItem="v5q-e5-CBc" firstAttribute="top" secondItem="6Oq-8D-qLq" secondAttribute="bottom" constant="16" id="ufi-NN-Qg2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9ml-4W-Bic"/>
                         <userDefinedRuntimeAttributes>
@@ -635,14 +634,14 @@
             <objects>
                 <viewController id="DLQ-Z6-8Q3" customClass="MainAppViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBY-nH-VhR" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-Fx-EzO">
-                                <rect key="frame" x="48" y="776" width="318" height="54"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-Fx-EzO">
+                                <rect key="frame" x="32" y="648" width="350" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFs-0J-ZOb">
-                                        <rect key="frame" x="0.0" y="1" width="43.5" height="52"/>
+                                        <rect key="frame" x="0.0" y="1.3333333333333321" width="63.666666666666664" height="37.666666666666671"/>
                                         <color key="tintColor" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" backgroundImage="sportscourt" catalog="system"/>
                                         <connections>
@@ -650,7 +649,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgB-8N-Vh3">
-                                        <rect key="frame" x="91.5" y="1.5" width="43.5" height="51.5"/>
+                                        <rect key="frame" x="95.666666666666671" y="1.6666666666666679" width="63.333333333333329" height="37.333333333333336"/>
                                         <color key="tintColor" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" backgroundImage="person.3" catalog="system"/>
                                         <connections>
@@ -658,7 +657,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-GZ-280">
-                                        <rect key="frame" x="183" y="2" width="43.5" height="50"/>
+                                        <rect key="frame" x="191" y="2.3333333333333321" width="63.666666666666657" height="35.666666666666671"/>
                                         <color key="tintColor" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" backgroundImage="list.number" catalog="system"/>
                                         <connections>
@@ -666,7 +665,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INY-k3-guX">
-                                        <rect key="frame" x="274.5" y="0.5" width="43.5" height="53"/>
+                                        <rect key="frame" x="286.66666666666669" y="1" width="63.333333333333314" height="38.666666666666671"/>
                                         <color key="tintColor" red="0.75686274509999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" backgroundImage="music.note.list" catalog="system"/>
                                         <connections>
@@ -674,23 +673,23 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fh1-ZC-Des"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bcZ-R0-zhj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="kC0-LO-Gej"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="44" width="414" height="548"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oqH-bE-PxG" firstAttribute="trailing" secondItem="g7e-Fx-EzO" secondAttribute="trailing" constant="48" id="AdE-Rz-lTj"/>
+                            <constraint firstItem="oqH-bE-PxG" firstAttribute="trailing" secondItem="g7e-Fx-EzO" secondAttribute="trailing" constant="32" id="AdE-Rz-lTj"/>
                             <constraint firstItem="bcZ-R0-zhj" firstAttribute="top" secondItem="oqH-bE-PxG" secondAttribute="top" id="IzP-wr-CRD"/>
-                            <constraint firstItem="g7e-Fx-EzO" firstAttribute="leading" secondItem="oqH-bE-PxG" secondAttribute="leading" constant="48" id="Lb1-hR-6m2"/>
-                            <constraint firstItem="oqH-bE-PxG" firstAttribute="bottom" secondItem="g7e-Fx-EzO" secondAttribute="bottom" constant="32" id="U1K-gv-UPh"/>
+                            <constraint firstItem="g7e-Fx-EzO" firstAttribute="leading" secondItem="oqH-bE-PxG" secondAttribute="leading" constant="32" id="Lb1-hR-6m2"/>
+                            <constraint firstItem="oqH-bE-PxG" firstAttribute="bottom" secondItem="g7e-Fx-EzO" secondAttribute="bottom" constant="48" id="U1K-gv-UPh"/>
                             <constraint firstItem="bcZ-R0-zhj" firstAttribute="trailing" secondItem="oqH-bE-PxG" secondAttribute="trailing" id="dNH-v4-U7X"/>
                             <constraint firstItem="bcZ-R0-zhj" firstAttribute="leading" secondItem="oqH-bE-PxG" secondAttribute="leading" id="gFk-Wm-3u7"/>
-                            <constraint firstItem="g7e-Fx-EzO" firstAttribute="top" secondItem="bcZ-R0-zhj" secondAttribute="bottom" constant="88" id="rkh-AW-Z5N"/>
+                            <constraint firstItem="g7e-Fx-EzO" firstAttribute="top" secondItem="bcZ-R0-zhj" secondAttribute="bottom" constant="56" id="rkh-AW-Z5N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oqH-bE-PxG"/>
                         <userDefinedRuntimeAttributes>
@@ -703,6 +702,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="FWH-q3-vIj"/>
+                    <connections>
+                        <outlet property="classesButton" destination="AFs-0J-ZOb" id="RDX-3S-MJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pum-Mg-2pj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -713,23 +715,23 @@
             <objects>
                 <viewController id="LK9-lH-2Em" customClass="SongsViewController" customModule="_6_11_LFC_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dZc-IN-wuh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-7O-h3n">
-                                <rect key="frame" x="16" y="104" width="382" height="638"/>
+                                <rect key="frame" x="16" y="60" width="382" height="596"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-7S-bN1" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allez Allez Allez" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-hJ-jlP">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frx-WY-Msn">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="nLb-4h-2QI"/>
                                                     <constraint firstAttribute="width" constant="30" id="wR3-PI-lFk"/>
@@ -741,7 +743,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gav-jM-LKh">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="EuR-1h-6XI"/>
                                                     <constraint firstAttribute="height" constant="30" id="Pdt-kH-caS"/>
@@ -774,16 +776,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-BZ-WCg" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="111" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="104" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YNWA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-02-yUJ">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l1-Bh-bZw">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="SKt-VZ-RTL"/>
                                                     <constraint firstAttribute="width" constant="30" id="ler-jW-7hH"/>
@@ -795,7 +797,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ses-3S-5n7">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CAV-AM-nxV"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Cnd-Jy-BbG"/>
@@ -830,16 +832,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-xI-ugi" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="222" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="208" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Love You Liverpool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRq-Y2-WLY">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P7-Ib-BIE">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="JaW-Q5-LCH"/>
                                                     <constraint firstAttribute="width" constant="30" id="y9J-E5-ha1"/>
@@ -851,7 +853,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueG-MB-87k">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="LFE-ul-eSy"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="SW9-Mv-SoG"/>
@@ -887,16 +889,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byS-Y9-BJU" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="333" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="312" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bobby Firmino Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJJ-4O-4H3">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-o5-bVs">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="WJi-ct-2uw"/>
                                                     <constraint firstAttribute="height" constant="30" id="bbZ-5L-OTx"/>
@@ -908,7 +910,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gw-Ej-vV1">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="5rC-Gt-d6O"/>
                                                     <constraint firstAttribute="height" constant="30" id="TZG-qV-lcz"/>
@@ -944,16 +946,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dtn-qm-yK2" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="444" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="416" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mo Salah Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSm-vY-1kA">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huu-Dd-HiS">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MFA-gU-rYL"/>
                                                     <constraint firstAttribute="width" constant="30" id="i8U-5h-ldM"/>
@@ -965,7 +967,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yii-yW-D8J">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0aS-Zc-Czx"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="j21-HX-OAw"/>
@@ -1001,16 +1003,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usv-ns-xU5" customClass="GradientView" customModule="_6_11_LFC_FireBase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="555" width="382" height="83"/>
+                                        <rect key="frame" x="0.0" y="520" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virgil Van Dijk Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-O3-Oaa">
-                                                <rect key="frame" x="16" y="28.5" width="258" height="26.5"/>
+                                                <rect key="frame" x="16" y="25" width="258" height="26.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-nt-IRM">
-                                                <rect key="frame" x="290" y="28" width="30" height="26.5"/>
+                                                <rect key="frame" x="290" y="25" width="30" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="gGb-gf-HB8"/>
                                                     <constraint firstAttribute="width" constant="30" id="oGp-gz-HOR"/>
@@ -1022,7 +1024,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmT-B6-Twj">
-                                                <rect key="frame" x="336" y="28.5" width="30" height="26"/>
+                                                <rect key="frame" x="336" y="25.333333333333332" width="30" height="25.333333333333339"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0uo-V0-Ul7"/>
                                                     <constraint firstAttribute="height" constant="30" id="Bua-KD-oHs"/>
@@ -1065,7 +1067,7 @@
                             <constraint firstItem="yYo-7O-h3n" firstAttribute="top" secondItem="xMp-RT-hN7" secondAttribute="top" constant="16" id="dyl-50-0uI"/>
                             <constraint firstItem="yYo-7O-h3n" firstAttribute="leading" secondItem="xMp-RT-hN7" secondAttribute="leading" constant="16" id="gPX-L1-Ok1"/>
                             <constraint firstItem="xMp-RT-hN7" firstAttribute="trailing" secondItem="yYo-7O-h3n" secondAttribute="trailing" constant="16" id="tmt-vC-u1k"/>
-                            <constraint firstItem="xMp-RT-hN7" firstAttribute="bottom" secondItem="yYo-7O-h3n" secondAttribute="bottom" constant="120" id="vYE-8t-r1N"/>
+                            <constraint firstItem="xMp-RT-hN7" firstAttribute="bottom" secondItem="yYo-7O-h3n" secondAttribute="bottom" constant="80" id="vYE-8t-r1N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xMp-RT-hN7"/>
                     </view>
@@ -1081,7 +1083,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1HW-zd-TBp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eaM-MW-bwn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </navigationBar>

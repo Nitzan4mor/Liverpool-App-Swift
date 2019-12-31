@@ -12,6 +12,7 @@ class MainAppViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
+    @IBOutlet weak var classesButton: UIButton!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -27,8 +28,6 @@ class MainAppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Do any additional setup after loading the view.
     }
  
 

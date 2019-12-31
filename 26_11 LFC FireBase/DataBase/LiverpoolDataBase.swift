@@ -118,7 +118,12 @@ class LiverpoolDataBase {
                     let topScorerOne:String = dict["topScorerOne"] ?? "error"
                     let topScorerThree:String = dict["topScorerThree"] ?? "error"
                     let topScorerTwo:String = dict["topScorerTwo"] ?? "error"
-                    stats = Stats(biggestDefeat: biggestDefeat, biggestVictory: biggestVictory, highestScoreMatch: highestScoreMatch, topAssistOne: topAssistOne, topAssistThree: topAssistThree, topAssistTwo: topAssistTwo, topMinutesOne: topMinutesOne, topMinutesThree: topMinutesThree, topMinutesTwo: topMinutesTwo, topScorerOne: topScorerOne, topScorerThree: topScorerThree, topScorerTwo: topScorerTwo)
+                    let gamesPlayed:String = dict["gamesPlayed"] ?? "error"
+                    let gamesWon:String = dict["gamesWon"] ?? "error"
+                    let gamesLost:String = dict["gamesLost"] ?? "error"
+                    let gamesDrawn:String = dict["gamesDrawn"] ?? "error"
+
+                    stats = Stats(biggestDefeat: biggestDefeat, biggestVictory: biggestVictory, highestScoreMatch: highestScoreMatch, topAssistOne: topAssistOne, topAssistThree: topAssistThree, topAssistTwo: topAssistTwo, topMinutesOne: topMinutesOne, topMinutesThree: topMinutesThree, topMinutesTwo: topMinutesTwo, topScorerOne: topScorerOne, topScorerThree: topScorerThree, topScorerTwo: topScorerTwo, gamesPlayed: gamesPlayed, gamesWon: gamesWon, gamesDrawn: gamesDrawn, gamesLost: gamesLost)
                     
                     topScorers.append("1) \(topScorerOne)")
                     topScorers.append("2) \(topScorerTwo)")
@@ -135,6 +140,8 @@ class LiverpoolDataBase {
                     general.append("Biggest victory - \(biggestVictory)")
                     general.append("Biggest defeat - \(biggestDefeat)")
                     general.append("Highest score match - \(highestScoreMatch)")
+                    general.append("Liverpool played \(gamesPlayed) official games this season")
+                    general.append("Liverpool won \(gamesWon) games, drawn \(gamesDrawn) and lost \(gamesLost)")
                 }
                 
                 DispatchQueue.main.async {

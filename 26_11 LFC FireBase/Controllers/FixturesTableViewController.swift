@@ -92,7 +92,7 @@ class FixturesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.bounds.height / 2.9
+        return 280
     }
     
     // MARK: - Navigation

@@ -21,5 +21,8 @@ struct Stats {
     let topScorerOne:String
     let topScorerThree:String
     let topScorerTwo:String
-
+    let gamesPlayed:String
+    let gamesWon:String
+    let gamesDrawn:String
+    let gamesLost:String
 }
